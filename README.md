@@ -4,11 +4,11 @@ Este projeto realiza uma ETL utilizando o método SCD2 (Slowly Changing Dimensio
 
 ### Carga Bulk Otimizada
 
-    O processo de carga é otimizado com a utilização de bulk load, proporcionando eficiência na transferência dos dados para as tabelas. O esquema GOLD armazena as informações consolidadas para análises.
+O processo de carga é otimizado com a utilização de bulk load, proporcionando eficiência na transferência dos dados para as tabelas. O esquema GOLD armazena as informações consolidadas para análises.
 
 ### Procedimento de Log Reutilizável
 
-    Um procedimento de log foi criado para registrar informações sobre o processo de carga, possibilitando monitoramento e análise de eventos. A procedure é flexível e pode ser reutilizada em diferentes processos ETL.
+Um procedimento de log foi criado para registrar informações sobre o processo de carga, possibilitando monitoramento e análise de eventos. A procedure é flexível e pode ser reutilizada em diferentes processos ETL.
 
 ## Pré-requisitos
 
