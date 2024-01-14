@@ -1,15 +1,19 @@
-# Repositório de ETL em SQL 
+# Projeto ETL com SCD2
 
-Este repositório contém uma coleção de notebooks de extração, transformação e carregamento de dados (ETL) criados com o uso de SQL e implementando os métodos SCD2 e SCD3.
+Este projeto realiza uma ETL utilizando o método SCD2 (Slowly Changing Dimension 2) para a transformação de dados brutos do banco de dados Northwind. A modelagem é composta por quatro esquemas: STAGING, SILVER, GOLD e LOGS. O processo inclui a criação de uma tabela de log e uma procedure de log para reutilização nos diversos processos. Uma tabela STAGING é desenvolvida para receber os dados brutos, permitindo uma carga bulk otimizada.
+
+### Carga Bulk Otimizada
+
+    O processo de carga é otimizado com a utilização de bulk load, proporcionando eficiência na transferência dos dados para as tabelas. O esquema GOLD armazena as informações consolidadas para análises.
+
+### Procedimento de Log Reutilizável
+
+    Um procedimento de log foi criado para registrar informações sobre o processo de carga, possibilitando monitoramento e análise de eventos. A procedure é flexível e pode ser reutilizada em diferentes processos ETL.
 
 ## Pré-requisitos
 
     Banco de dados Microsoft SQL Server
     Azure Data Studios
-
-## Conteúdo
-
-Cada pasta neste repositório contém um notebook de ETL específico, implementando um dos métodos SCD2 ou SCD3.
 
 ## Como usar
 
